@@ -7,7 +7,7 @@ Full webstack - Centos 7, LEMP, Nginx, Percona-XtraDB-Cluster, PHP-FPM 5
 
 - Get Centos 7 Box
 	- You can create clean centos 7 base box.
-	This is my guide: 
+	This is guide: 
 	http://linoxide.com/linux-how-to/setup-centos-7-vagrant-base-box-virtualbox/
 	
 	- You can download clear centos 7 base box:
