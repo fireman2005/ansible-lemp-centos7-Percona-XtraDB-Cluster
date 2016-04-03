@@ -1,0 +1,38 @@
+---
+- name: be sure firewalld is running and enabled
+  service: name=firewalld state=running enabled=true
+
+- name: enable http(80) to public
+  command: firewall-cmd --permanent --zone=public --add-service=http
+  notify: 
+  - restart firewalld.service
+
+- name: enabled https(443) to public
+  command: firewall-cmd --permanent --zone=public --add-service=http
+  notify: 
+  - restart firewalld.service
+
+- name: enable 8080/tcp port to public
+  command: firewall-cmd --permanent --zone=public --add-port=8080/tcp
+  notify: 
+  - restart firewalld.service
+
+- name: enable 4444/tcp port to public
+  command: firewall-cmd --permanent --zone=public --add-port=4444/tcp
+  notify: 
+  - restart firewalld.service
+
+- name: enable 4567/tcp port to public
+  command: firewall-cmd --permanent --zone=public --add-port=4567/tcp
+  notify: 
+  - restart firewalld.service
+
+- name: enable 4568/tcp port to public
+  command: firewall-cmd --permanent --zone=public --add-port=4568/tcp
+  notify: 
+  - restart firewalld.service
+  
+- name: enable 3306/tcp port to public
+  command: firewall-cmd --permanent --zone=public --add-port=3306/tcp
+  notify: 
+  - restart firewalld.service
