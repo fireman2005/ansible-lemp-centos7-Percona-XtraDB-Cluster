@@ -1,0 +1,4 @@
+---
+- name: Copy default configuration
+  template: src=default.conf.j2 dest=/etc/nginx/conf.d/{{conf_name}}.conf mode=0644
+  notify: Restart nginx.service
