@@ -1,0 +1,11 @@
+---
+- hosts: sing
+  sudo: yes
+  roles:
+  # - common
+  # - percona
+  # - percona-xtradb-cluster
+  # - nginx
+  # - php-fpm-55
+  # - nginx-conf
+  # - firewalld
