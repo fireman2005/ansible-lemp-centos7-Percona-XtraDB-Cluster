@@ -1,0 +1,11 @@
+---
+- hosts: cluster-db
+  sudo: yes
+  roles:
+  - common
+  - percona
+  - percona-xtradb-c2luster
+  - nginx
+  - php-fpm-55
+  - firewalld
+  # - nginx-conf
