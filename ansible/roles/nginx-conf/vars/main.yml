@@ -1,0 +1,7 @@
+---
+conf_name: cluster-db
+conf_domain: webinar73.ru
+conf_port: 80
+conf_root_path: /usr/share/nginx/html
+conf_access_log: /var/log/nginx/cluster-db_access.log main buffer=16k
+conf_client_max_body_size: 5M
